@@ -14,8 +14,8 @@ class FeaturedBookListView extends StatelessWidget {
         itemCount: 4,
         itemBuilder: (context, index) {
           return const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8.0),
-            child: CustomListViewItem(),
+            padding: EdgeInsets.only(right: 8.0),
+            child: FeaturedListViewItem(),
           );
         },
       ),
