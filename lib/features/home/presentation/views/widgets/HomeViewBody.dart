@@ -22,7 +22,7 @@ class HomeViewBody extends StatelessWidget {
                   child: CustomAppBar(),
                 ),
                 FeaturedBookListView(),
-                SizedBox(height: 50),
+                SizedBox(height: 40),
                 Padding(
                   padding: EdgeInsets.only(left: 30),
                   child: Text(
