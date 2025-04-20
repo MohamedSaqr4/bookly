@@ -1,4 +1,5 @@
 import 'package:bookly/core/utils/styles.dart';
+import 'package:bookly/features/home/presentation/views/widgets/BookRatin.dart';
 import 'package:bookly/features/home/presentation/views/widgets/CustomBookDetailsAppBar.dart';
 import 'package:bookly/features/home/presentation/views/widgets/CustomBookItem.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class BookDetailsViewBody extends StatelessWidget {
           const CustomBookDetailsAppBar(),
           const SizedBox(height: 12),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: width * 0.18),
+            padding: EdgeInsets.symmetric(horizontal: width * 0.2),
             child: const CustomBookImage(),
           ),
           const SizedBox(height: 43),
@@ -29,6 +30,8 @@ class BookDetailsViewBody extends StatelessWidget {
               style: Styles.textStyle18.copyWith(fontStyle: FontStyle.italic),
             ),
           ),
+          const SizedBox(height: 14),
+          const BookRating(),
         ],
       ),
     );
