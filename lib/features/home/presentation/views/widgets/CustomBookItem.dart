@@ -7,7 +7,7 @@ class CustomBookImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 2.7 / 4, //rate between width and height
+      aspectRatio: 2.6 / 4, //rate between width and height
       child: Container(
         decoration: BoxDecoration(
           color: Colors.red,
