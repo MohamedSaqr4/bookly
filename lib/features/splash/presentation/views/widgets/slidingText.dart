@@ -8,7 +8,7 @@ class SlidingText extends StatelessWidget {
 
   // AnimatedBuilder is used to rebuild this  widget when the animation changes or rebuilds
   // to avoid using setState in the parent widget
-  
+
   final Animation<Offset> slidingAnimation;
   @override
   Widget build(BuildContext context) {
