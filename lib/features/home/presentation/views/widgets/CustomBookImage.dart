@@ -11,7 +11,6 @@ class CustomBookImage extends StatelessWidget {
       child: AspectRatio(
         aspectRatio: 2.6 / 4, //rate between width and height
         child: CachedNetworkImage(
-          
           fit: BoxFit.fill,
           imageUrl: imageUrl,
           errorWidget: (context, url, error) => const Icon(

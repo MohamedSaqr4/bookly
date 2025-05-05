@@ -10,9 +10,10 @@ class SearchResultListView extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       itemCount: 10,
       itemBuilder: (context, index) {
-        return const Padding(
+        return  const Padding(
           padding: EdgeInsets.only(bottom: 20),
-          child: BookListViewItem(),
+          // child: BookListViewItem(),
+          child: Text('d'),
         );
       },
     );
