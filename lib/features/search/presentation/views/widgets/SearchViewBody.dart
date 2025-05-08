@@ -1,5 +1,5 @@
-import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/search/presentation/views/widgets/SearchResultListView.dart';
+import 'package:bookly/features/search/presentation/views/widgets/SearchResultsHeader.dart';
 import 'package:bookly/features/search/presentation/views/widgets/custoSearchTextField.dart';
 import 'package:flutter/material.dart';
 
@@ -8,26 +8,24 @@ class SearchViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 8.0),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: CustomScrollView(
-        physics: BouncingScrollPhysics(),
+        physics: const BouncingScrollPhysics(),
         slivers: [
           SliverToBoxAdapter(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CustomSearchTextField(),
-                SizedBox(height: 16),
-                Text(
-                  'Search Results',
-                  style: Styles.textStyle18,
+                CustomSearchTextField(
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
+                const SearchResultHeader(),
+                const SizedBox(height: 16),
               ],
             ),
           ),
-          SliverFillRemaining(
+          const SliverFillRemaining(
             child: SearchResultListView(),
           ),
         ],
